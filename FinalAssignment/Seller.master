@@ -1,0 +1,12 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Seller.master.cs" Inherits="Project.NestedMasterPage1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContentPlaceHolder" runat="server">
+    <asp:Label ID="lblWelcome" runat="server" CssClass="Welcome"></asp:Label>
+<asp:Button ID="btn_ViewAds" runat="server" OnClick="btn_ViewAds_Click" Text="My Ads" />
+&nbsp;&nbsp;&nbsp;
+<asp:Button ID="btn_buy" runat="server" Height="25px" OnClick="btn_buy_Click" Text="Buy " Width="70px" />
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+   
+</asp:ContentPlaceHolder>
+</asp:Content>

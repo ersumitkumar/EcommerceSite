@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Project.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+      <link href="main.css" rel="stylesheet" />
+</head>
+<body>
+
+     <style type="text/css">
+        body{
+            background-image:url('Resources/back.jpg');
+            background-size:cover;
+        }
+         </style>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Panel ID="Panel1" runat="server" Height="65px">
+                <asp:Label ID="Label1" runat="server" Text="">Easy Boutique</asp:Label>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:HyperLink ID="hplk_register" runat="server">Register</asp:HyperLink>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     <asp:HyperLink ID="hplk_login" runat="server">Login</asp:HyperLink>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Button ID="btn_sell" runat="server" Text="Post an Ad" OnClick="btn_sell_Click" />
+            </asp:Panel>
+                <ul>
+            <li><a href="Default.aspx">Home</a></li>
+            <li><a href="buyer/BuyProduct.aspx">Buy Product </a></li>
+            <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Maintain Product</a>
+                <div class="dropdown-content">
+                  <a href="seller/AddProduct.aspx">Add</a>
+                  <a href="EditProduct.aspx">Edit</a>
+                  <a href="EditProduct.aspx">Delete</a>
+                </div>
+              </li>
+                    <li><a href="#home">Make Enquiry</a></li>
+             <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Maintain Profile</a>
+                <div class="dropdown-content">
+                  <a href="#">Add</a>
+                  <a href="#">Edit</a>
+                  <a href="#">Delete</a>
+                </div>
+              </li>
+              <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">History</a>
+                <div class="dropdown-content">
+                  <a href="#">Enquires Made</a>
+                  <a href="#">Items Purchased</a>                 
+                </div>
+              </li>
+                 
+            <li style="float:right"><a class="active" href="#about">About</a></li>
+            </ul>
+            <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server">
+               
+            </asp:ContentPlaceHolder>
+          
+      
+        
+              
+        </div>
+        <asp:Panel ID="Panel2" runat="server">
+            <p class="footer"> <asp:Label ID="lbl_footer" runat="server" Text="Label">Final Project By : Atkinson Patrick | Kumar Sumit | Toofany Aisha</asp:Label></p>
+        </asp:Panel>
+    </form>
+</body>
+</html>
